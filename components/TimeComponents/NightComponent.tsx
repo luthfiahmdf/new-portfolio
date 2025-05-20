@@ -1,7 +1,7 @@
 'use client'
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-
+import React from 'react'
 export const NightComponent = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [time, setTime] = useState("");

@@ -1,14 +1,12 @@
 'use client'
-
-import { GithubStats } from "@/components/githubCalendar";
-import { GithubCard } from "@/components/GithubCard";
-import { OnlineCard } from "@/components/onlineCard";
-import { ProfileCard } from "@/components/profileCard";
-import { SpotifyCard } from "@/components/spotifyCard";
-import { TimeCard } from "@/components/timeCard";
-import { ToggleCard } from "@/components/ToggleCard";
-
-
+import { GithubStats } from '@/components/githubCalendar';
+import { GithubCard } from '@/components/GithubCard';
+import { OnlineCard } from '@/components/onlineCard';
+import { ProfileCard } from '@/components/profileCard';
+import { SpotifyCard } from '@/components/spotifyCard';
+import { TimeCard } from '@/components/timeCard';
+import { ToggleCard } from '@/components/ToggleCard';
+import React from 'react'
 export default function Home() {
 
 
@@ -23,8 +21,8 @@ export default function Home() {
 
       {/* Bottom Grid - Content Section */}
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
-        <SpotifyCard />
         <TimeCard />
+        <SpotifyCard />
         <div className=" flex flex-col gap-2">
           <OnlineCard />
           <GithubStats />
@@ -33,8 +31,6 @@ export default function Home() {
       </section>
       <div className="flex flex-col md:flex-row items-center justify-start gap-4">
         <GithubCard />
-        <GithubCard />
-
       </div>
     </main>
   );

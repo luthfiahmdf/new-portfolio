@@ -1,6 +1,6 @@
 
 'use client';
-
+import React from 'react';
 import { motion } from 'framer-motion';
 import Toggle from './Toggle';
 
@@ -14,7 +14,7 @@ export const ToggleCard = () => {
         ease: "easeInOut",
         rotate: { type: "spring", stiffness: 200 }
       }}
-      className="bg-[#FFAF45] dark:bg-[#94B4C1] rounded-3xl  shadow-md flex justify-center aspect-square items-center w-full h-42 sm:w-48 sm:h-48 md:w-56 md:h-56 xl:w-64 xl:h-64"
+      className="bg-[#FFAF45] dark:bg-[#94B4C1] rounded-3xl  shadow-md flex justify-center aspect-square items-center w-full h-42 sm:w-48 sm:h-48 md:w-56 md:h-[23rem] lg:h-72 xl:h-64"
     >
       <Toggle />
     </motion.div>

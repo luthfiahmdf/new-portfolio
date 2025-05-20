@@ -1,7 +1,7 @@
 
 'use client'
 
-
+import React from 'react'
 import { ThemeAnimationType, useModeAnimation } from 'react-theme-switch-animation'
 import { motion } from 'motion/react'
 import SwitchDarkMode from "./ui/switch-dark-mode";

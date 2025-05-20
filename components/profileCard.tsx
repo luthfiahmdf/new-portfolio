@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion"
-
+import React from 'react'
 export const ProfileCard = () => {
   return (
     <motion.div
@@ -14,7 +14,7 @@ export const ProfileCard = () => {
       }}
       className="group bg-[#BAD8B6] dark:bg-[#6f9983] text-black dark:text-white 
                 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow
-            w-full h-full sm:w-48 sm:h-48 md:w-56 md:h-56 xl:w-full xl:h-64 cursor-pointer"
+            w-full h-full sm:w-48 sm:h-48 md:w-full md:h-full xl:h-64   cursor-pointer"
     >
       <div className="flex flex-col gap-3">
         <h1 className="text-2xl md:text-3xl font-bold tracking-tight">

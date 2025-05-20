@@ -1,9 +1,14 @@
 import { motion } from "motion/react"
 import { FaGithub } from "react-icons/fa"
+import React from 'react'
 import { CiLocationArrow1 } from "react-icons/ci";
 export const GithubCard = () => {
   return (
-    <motion.div whileHover={{ scale: 1.04, rotate: -1 }}
+    <motion.a
+      href="https://github.com/luthfiahmdf"
+      target="_blank"
+      rel="noreferrer"
+      whileHover={{ scale: 1.04, rotate: -1 }}
       whileTap={{ scale: 0.98 }}
       transition={{
         duration: 0.2,
@@ -14,7 +19,7 @@ export const GithubCard = () => {
         <FaGithub className="text-[6rem] mt-[2rem] md:text-[8rem] xl:text-[10rem] " />
       </div>
       <span className="opacity-0 group-hover:opacity-100 transition-opacity flex justify-end items-end p-3"><CiLocationArrow1 className="text-5xl text-gray-800 dark:text-gray-100" /></span>
-    </motion.div>
+    </motion.a>
 
   )
 }

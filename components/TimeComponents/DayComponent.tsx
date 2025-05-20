@@ -1,30 +1,35 @@
+
 'use client'
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import React from 'react';
 
 export const DayComponent = () => {
   const [time, setTime] = useState("");
-  const formatter = new Intl.DateTimeFormat('id-ID', { timeZone: 'Asia/Jakarta', hour12: true, hour: 'numeric', minute: 'numeric' })
+  const formatter = new Intl.DateTimeFormat('id-ID', {
+    timeZone: 'Asia/Jakarta',
+    hour12: true,
+    hour: 'numeric',
+    minute: 'numeric',
+  });
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(
-        formatter.format(new Date())
-      );
+      setTime(formatter.format(new Date()));
     }, 1000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="bg-gradient-to-br from-[#0A8DFF] to-[#98CFFF] w-full overflow-hidden col-span-1 row-span-1">
-      <div className="md:m-5 m-2 mt-3 md:mt-5  justify-end">
-        <div className="flex items-baseline space-x-1 md:space-x-2 opacity-85">
-          <div className="rounded-full bg-white w-2 h-2 md:w-5 md:h-5"></div>
-          <div className="flex flex-col">
-            <div className="text-white font-bold text-2xl md:text-2xl xl:text-4xl">{time}</div>
-            <div className="text-gray-900 font-thin -mt-2 text-2xl md:text-lg xl:text-2xl">West Indonesia Time</div>
-          </div>
+    <div className="bg-gradient-to-br from-[#0A8DFF] to-[#98CFFF] w-full min-h-[260px] rounded-3xl relative overflow-hidden flex flex-col justify-between p-4">
+      <div className="flex items-baseline space-x-1 md:space-x-2 opacity-85 z-10">
+        <div className="rounded-full bg-white w-2 h-2 md:w-5 md:h-5"></div>
+        <div className="flex flex-col">
+          <div className="text-white font-bold text-2xl md:text-2xl xl:text-4xl">{time}</div>
+          <div className="text-gray-900 font-thin -mt-2 text-2xl md:text-lg xl:text-2xl">West Indonesia Time</div>
         </div>
       </div>
+
       <motion.div
         animate={{
           scale: [1, 1.1, 1.1, 1, 1],
@@ -60,5 +65,4 @@ export const DayComponent = () => {
     </div>
   );
 }
-
 

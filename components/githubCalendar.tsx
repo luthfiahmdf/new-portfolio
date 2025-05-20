@@ -4,7 +4,7 @@ import GitHubCalendar from "react-github-calendar"
 import { FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react';
-
+import React from 'react'
 export const GithubStats = () => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);

@@ -14,7 +14,7 @@ export const GithubCard = () => {
         duration: 0.2,
         ease: "easeInOut",
         rotate: { type: "spring", stiffness: 200 }
-      }} className="group w-full flex flex-col h-full md:w-48 md:h-48 border-2 xl:w-64 xl:h-64 bg-zinc-300 dark:bg-gray-900 rounded-3xl">
+      }} className="group w-full flex flex-col h-full md:w-48 md:h-48  xl:w-64 xl:h-64 bg-zinc-300 dark:bg-gray-900 rounded-3xl">
       <div className="flex-1 flex justify-center items-center relative">
         <FaGithub className="text-[6rem] mt-[2rem] md:text-[8rem] xl:text-[10rem] " />
       </div>

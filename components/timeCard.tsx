@@ -16,8 +16,8 @@ export const TimeCard = () => {
   const [sunriseTime, sunsetTime] = useMemo(() => {
     if (!data) return [null, null];
 
-    const sunrise = new Date(data.results.civil_twilight_begin);
-    const sunset = new Date(data.results.civil_twilight_end);
+    const sunrise = new Date(data.results.sunrise);
+    const sunset = new Date(data.results.sunset);
 
     if (isNaN(sunrise.getTime()) || isNaN(sunset.getTime())) {
       return [null, null];

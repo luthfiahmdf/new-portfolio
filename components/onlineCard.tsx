@@ -34,6 +34,10 @@ export const OnlineCard = () => {
       <div className="flex flex-1 items-center justify-center">
         <p className="text-4xl font-bold leading-tight">{statusText}</p>
       </div>
+      <div className="flex justify-start w-full">
+        <p className="text-xl" >@upiiii</p>
+
+      </div>
     </motion.div>
   );
 };

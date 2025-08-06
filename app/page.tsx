@@ -1,6 +1,7 @@
 'use client'
 import { GithubStats } from '@/components/githubCalendar';
 import { GithubCard } from '@/components/GithubCard';
+import { MailCard } from '@/components/MailCard';
 import { OnlineCard } from '@/components/onlineCard';
 import { ProfileCard } from '@/components/profileCard';
 import { SpotifyCard } from '@/components/spotifyCard';
@@ -31,6 +32,7 @@ export default function Home() {
       </section>
       <div className="flex flex-col md:flex-row items-center justify-start gap-4">
         <GithubCard />
+        <MailCard />
       </div>
     </main>
   );
